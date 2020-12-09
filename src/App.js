@@ -5,10 +5,10 @@ import Simulation from "./Simulation"
 
 
 class App extends Component {
-  componentDidMount() {
-  }
   render() {
-  return (<>
+  return (
+  <>
+  
   <Simulation></Simulation>
     </>
 );
