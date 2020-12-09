@@ -426,12 +426,14 @@ class Simulation extends Component {
   }
   return (
     <>
-    <div style={{backgroundColor:"#D09090", marginBottom: "2%", height:"100px", width:"24%", paddingTop: "2%"}}>
-     <div className="back" style={{ marginLeft: "5%"}}>
-       <li id="a">
-         <a href={"https://festive-wilson-5bcfd5.netlify.app/"}>Back to main page</a>
-         </li>
-         </div>
+    <div className="home" style={{marginTop: "1%",height: "10%", width: "12%", paddingLeft: "5%"}}>
+    <button 
+         className = "homeButton"  
+         style={{backgroundColor:"#D09090", marginBottom: "2%", marginTop: "2%", fontSize: "large"}}
+         onClick={event =>  window.location.href='https://festive-wilson-5bcfd5.netlify.app/'}
+         >
+           Back to main page
+           </button>
     </div>
       <div className = "one" style={{height: window.innerHeight/2, width: window.innerWidth/5, marginBottom: "2%"}}>
       <div className = "ones" style={{height: window.innerHeight/2, width: window.innerWidth/5, }}>
@@ -448,7 +450,7 @@ class Simulation extends Component {
           
           <button className = "homeButton" onClick={restartSimulation}>Reset</button></div>
           
-          <div style={{fontSize: "small"}}>Infection Chance: <input
+          <div>Infection Chance: <input
                 name="inChance"
                 type="range"
                 min="1"
@@ -457,7 +459,7 @@ class Simulation extends Component {
                 onChange={this.changeInChance} />{
                   parseInt(this.state.inChance*100)}%</div>
           
-          <div style={{fontSize: "small"}}>Recovery Chance: <input
+          <div>Recovery Chance: <input
               name="recChance"
               type="range"
               min="1"
@@ -470,7 +472,7 @@ class Simulation extends Component {
           <div> <button className = "homeButton" onClick={play}>Play</button>
           <button className = "homeButton" onClick={pause}>Pause</button></div>
           
-          Speed of Simulation: 
+          Speed:  
           
           fast<input
               name="simSpeed"
