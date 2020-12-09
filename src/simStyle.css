@@ -13,22 +13,10 @@
   border-radius: 50%;
   display: inline-block;
 }
-a {
-  display: block;
-  color: white;
-  text-align: left;
-  padding: 0px 95px;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 30px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-a:hover {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-weight: 100;
-  text-decoration: underline;
-  text-decoration-thickness: 10px;
+.home {
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
 }
 
 .circle2 {
@@ -62,8 +50,8 @@ a:hover {
 }
 .homeButton {
   background-color: #828fa2;
-  border: none;
-  color: white;
+  border: 1px solid lightgrey;
+  color: rgb(211, 209, 209);
   padding: 5%;
   text-align: center;
   text-decoration: none;
@@ -71,17 +59,26 @@ a:hover {
   font-size: small;
   border-radius: 20px;
 }
-
+.homeButton:hover {
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
 .circleButton {
   background-color: #828fa2;
-  border: none;
-  color: white;
+  border: 1px solid lightgrey;
+  color: rgb(211, 209, 209);
   text-align: center;
   padding: 5%;
   text-decoration: none;
   display: inline-block;
   font-size: small;
   border-radius: 50%;
+}
+.circleButton:hover {
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .two {
