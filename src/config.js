@@ -4,7 +4,7 @@ export const config = {
   "directed": false,
   "focusAnimationDuration": 0,
   "focusZoom": 1,
-  "height": 750,
+  "height": window.innerHeight/2,
   "highlightDegree": 1,
   "highlightOpacity": 1,
   "linkHighlightBehavior": false,
@@ -14,7 +14,7 @@ export const config = {
   "panAndZoom": false,
   "staticGraph": false,
   "staticGraphWithDragAndDrop": false,
-  "width": 1300,
+  "width":window.innerWidth/1.5,
   "d3": {
     "alphaTarget": 0.05,
     "gravity": -50,

@@ -1,7 +1,7 @@
 export const linedata = [
     {
     label: 'Susceptible',
-    values: [{x: 0, y: 0}]
+    values: [{x: 0.1, y: 100}]
     },
     {
     label: 'Infected',
