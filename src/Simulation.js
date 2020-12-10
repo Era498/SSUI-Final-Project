@@ -230,9 +230,6 @@ class Simulation extends Component {
       
 
       const onClickAddNode = function() {
-        let modConfig = {...ref.state.myConfig}
-          modConfig["staticGraphWithDragAndDrop"]=false;
-          ref.setState({myConfig: modConfig})
 
         if (ref.state.data.nodes && ref.state.data.nodes.length) {
           const maxIndex = ref.state.data.nodes.length - 1;
@@ -268,10 +265,6 @@ class Simulation extends Component {
           
         }
         ref.setState({ susNodes: ref.state.data.nodes.length-ref.state.LightCoralNodes-ref.state.MediumAquaMarineNodes });
-        setTimeout(() => {  
-          let modConfig = {...ref.state.myConfig}
-          modConfig["staticGraphWithDragAndDrop"]=true;
-          ref.setState({myConfig: modConfig})}, 9000);
       };
 
       const simStep = function() {
@@ -341,7 +334,9 @@ class Simulation extends Component {
         newlines[2].values.push({x: ref.state.xVal+1, y: gNum})
         ref.setState({linedata: newlines})
       }
-        
+      else {
+        pause()
+      }
           
       }
       const onClickRemoveNode  = function() {
@@ -435,9 +430,9 @@ class Simulation extends Component {
            Back to main page
            </button>
     </div>
-      <div className = "one" style={{height: window.innerHeight/2, width: window.innerWidth/5, marginBottom: "2%"}}>
-      <div className = "ones" style={{height: window.innerHeight/2, width: window.innerWidth/5, }}>
-      <div className = "buttons"style={{height: window.innerHeight/2, width: window.innerWidth/5}}>
+      <div className = "one" style={{height: window.innerHeight/2, width: window.innerWidth/4.8, marginBottom: "2%"}}>
+      <div className = "ones" style={{height: window.innerHeight/2, width: window.innerWidth/4.8, }}>
+      <div className = "buttons"style={{height: window.innerHeight/2, width: window.innerWidth/4.8}}>
           <div><button className = "circleButton" onClick={onClickAddNode}>
               +
             </button>

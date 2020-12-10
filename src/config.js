@@ -14,7 +14,7 @@ export const config = {
   "panAndZoom": false,
   "staticGraph": false,
   "staticGraphWithDragAndDrop": false,
-  "width":window.innerWidth/1.5,
+  "width":window.innerWidth/1.46,
   "d3": {
     "alphaTarget": 0.05,
     "gravity": -50,
