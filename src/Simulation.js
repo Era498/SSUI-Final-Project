@@ -358,7 +358,7 @@ class Simulation extends Component {
             item.color = susCol;
         });
         modData.links.forEach(item => {
-          item.color = "#d3d3d3";
+          item.color = "#828fa2";
       });
         ref.setState({ data: modData });
         ref.setState({xVal: 0})
