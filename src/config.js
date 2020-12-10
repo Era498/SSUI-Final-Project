@@ -27,7 +27,7 @@ export const config = {
       "fontColor": "black",
       "fontSize": 8,
       "fontWeight": "normal",
-      "highlightColor": "#a189a0",
+      "highlightColor": "#898c91",
       "highlightFontSize": 8,
       "highlightFontWeight": "normal",
       "highlightStrokeColor": "#a189a0",
