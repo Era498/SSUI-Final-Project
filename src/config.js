@@ -43,7 +43,7 @@ export const config = {
       "symbolType": "circle"
     },
     "link": {
-      "color": "#d3d3d3",
+      "color": "#585d66",
       "fontColor": "black",
       "fontSize": 8,
       "fontWeight": "normal",
